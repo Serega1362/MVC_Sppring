@@ -20,6 +20,8 @@ Your department: ${employee.department}
 <br>
 Your car: ${employee.carBrand}
 <br>
+Your email: ${employee.email}
+<br>
 Language(s):
 <ul>
     <c:forEach var="lang" items="${employee.languages}">

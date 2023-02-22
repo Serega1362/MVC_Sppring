@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
-    @Size(min = 2,message = "name must be min 2 symbols")
+    @Size(min = 2, message = "name must be min 2 symbols")
     private String name;
     @NotBlank(message = "surname is required field")
     private String surname;
@@ -20,7 +20,8 @@ public class Employee {
     private String carBrand;
     private Map<String, String> carBrands;
     private String[] languages;
-    private Map<String,String> languageList;
+    private Map<String, String> languageList;
+    private String email;
 
 
     public Employee() {
@@ -29,7 +30,7 @@ public class Employee {
         carBrands.put("Audi", "Audi");
         carBrands.put("Mercedes-Benz", "MB");
 
-        languageList= new HashMap<>();
+        languageList = new HashMap<>();
         languageList.put("English", "EN");
         languageList.put("Deutch", "DE");
         languageList.put("French", "FR");
@@ -106,6 +107,14 @@ public class Employee {
 
     public void setLanguageList(Map<String, String> languageList) {
         this.languageList = languageList;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override

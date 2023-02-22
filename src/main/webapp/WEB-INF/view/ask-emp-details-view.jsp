@@ -21,6 +21,9 @@
     Salary <form:input path="salary"/>
     <form:errors path="salary"/>
     <br><br>
+    Email <form:input path="email"/>
+    <form:errors path="email"/>
+    <br><br>
     Department <form:select path="department">
     <form:option value="Information Technology" label="IT"/>
     <form:option value="Human resources" label="HR"/>
